@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro Datos</title>
+    <link rel="stylesheet" href="Css/principal.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul class="menu">
+                <li class="ajustes"><a href="configuraciones.php">Ajustes</a></li>
+                <div class="center-menu">
+                    <li><a href="principal.php">Registro Datos</a></li>
+                    <li><a href="descriminacion.php">Descriminación Dinero</a></li>
+                    <li><a href="anulaciones.php">Anulaciones Parciales</a></li>
+                    <li><a href="">Relación Gastos</a></li>
+                </div>
+                <li class="index"><a href="index.html">Cerrar sesión</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="container">
+        <h2>Registro de datos</h2>
+        <br>
+        <form action="" method="post">
+            <label for="fecha">Fecha:</label>
+            <input type="date" id="fecha" name="fecha" required>
+            
+            <label for="zona">Zona:</label>
+            <input type="text" id="zona" name="zona" required>
+            
+            <label for="placa">Placa:</label>
+            <input type="text" id="placa" name="placa" required>
+            
+            <label for="nombre">Nombre Conductor:</label>
+            <select id="nombre" name="nombre" required>
+                <option value="nombre">Seleccione una opción</option>
+                <option value="nombre">David Vasquez</option>
+                <option value="nombre">Cristian Aguilar</option>
+                <option value="nombre">Walter Velasquez</option>
+            </select>
+            
+            <label for="distribuidor">Distribuidor:</label>
+            <select id="distribuidor" name="distribuidor" required>
+                <option value="empresa_1">Seleccione una opción</option>
+                <option value="empresa_2">Empresa_1</option>
+                <option value="empresa_3">Empresa_2</option>
+            </select>
+            
+            <label for="tercero">Tercero:</label>
+            <input type="text" id="tercero" name="tercero" required>
+            
+            <input type="submit" value="Registrar">
+        </form>
+    </div>
+</body>
+</html>
